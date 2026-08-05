@@ -1,0 +1,59 @@
+# Tredence
+
+> Tredence is a global data science and AI company focused on solving the last-mile problem in AI — the gap between insight creation and value realization. Founded in 2013 and headquartered in San Jose, California, Tredence builds and deploys agentic and generative AI solutions for enterprises across retail, CPG, healthcare, life sciences, banking/financial services/insurance, telco/media/tech, travel and hospitality, and industrials.
+
+## Company
+
+- [About Tredence](https://www.tredence.com/llm-info): Factual company reference — leadership, clients, certifications, FAQ *(placeholder URL — update once this page is published)*
+- [Our Story](https://www.tredence.com/company-our-story): Company history, founding, and mission
+- [Our Team](https://www.tredence.com/company-leadership): Executive leadership and board
+- [Analyst Recognitions](https://www.tredence.com/analyst-relation): Gartner, Forrester, Everest Group, ISG recognitions
+- [Client Success](https://www.tredence.com/client-success): Case studies and client outcomes
+- [Certifications](https://www.tredence.com/certifications): Security and compliance certifications
+- [Careers](https://www.tredence.com/company-careers): Open roles and hiring information
+
+## Services
+
+- [Agentic AI](https://www.tredence.com/services/agentic-ai): Autonomous, multi-agent systems for enterprise workflows
+- [Generative AI](https://www.tredence.com/services/generative-ai): GenAI applications and copilots for enterprise use cases
+- [Data Engineering](https://www.tredence.com/services/data-engineering): Data pipelines and platform infrastructure
+- [Data Science](https://www.tredence.com/services/data-science): Statistical modeling and predictive analytics
+- [MLOps](https://www.tredence.com/services/mlops): Deploying and maintaining ML models in production
+- [LLMOps](https://www.tredence.com/services/llmops): Deploying and scaling large language model applications
+- [Data Modernization](https://www.tredence.com/services/data-migration): Migrating legacy systems to modern cloud data platforms
+- [Supply Chain Management](https://www.tredence.com/services/supply-chain-management): Supply chain planning, forecasting, and optimization
+- [CX Analytics](https://www.tredence.com/services/customer-experience-analytics): Customer behavior, personalization, and retention analytics
+- [Digital Engineering](https://www.tredence.com/services/digital-engineering): Software and application engineering for data/AI products
+- [Advisory Services](https://www.tredence.com/services/tredence-advisory-services): AI and data transformation strategy consulting
+- [Global Capability Centres](https://www.tredence.com/services/global-capability-centres): Dedicated offshore/nearshore delivery teams
+
+## Industries
+
+- [Retail](https://www.tredence.com/industries/retail): AI/ML solutions for merchandising, pricing, and customer analytics
+- [CPG](https://www.tredence.com/industries/cpg): Supply chain, revenue growth management, and demand forecasting
+- [Healthcare](https://www.tredence.com/industries/healthcare): Data solutions for care delivery and operations
+- [Life Sciences](https://www.tredence.com/industries/life-sciences): Commercial analytics for pharma and biopharma
+- [Banking, Financial Services & Insurance](https://www.tredence.com/industries/financial-services): Risk, compliance, and productivity analytics for BFSI
+- [Telco, Media & Tech](https://www.tredence.com/industries/tmt): AI and data science across the TMT value chain
+- [Travel and Hospitality](https://www.tredence.com/industries/travel-hospitality): Personalization, pricing, and promotions analytics
+- [Industrials](https://www.tredence.com/industries/industrials): IIoT and automation for smart operations
+
+## Named Solutions
+
+- [RAPID](https://www.tredence.com/solution/agentic-process-automation-rapid): Agentic business process automation and modernization
+- [Supply Chain Control Tower](https://www.tredence.com/solutions/supply-chain-control-tower): Supply chain visibility and control
+- [MLWorks](https://www.tredence.com/products/mlworks-industrial-mlops-solution): Industrial MLOps solution
+- [Customer Cosmos](https://www.tredence.com/solutions/customer-cosmos): Customer analytics and 360° intelligence
+- [Revenue Growth Management](https://www.tredence.com/solutions/revenue-growth-management): RGM solution for retail and CPG
+- [On-Shelf Availability](https://www.tredence.com/solutions/on-shelf-availability): Retail on-shelf availability optimization
+- [Test and Learn Platform](https://www.tredence.com/solutions/test-and-learn-platform): Experimentation and testing platform
+- [UnityGO](https://www.tredence.com/solutions/unitygo): Named Tredence solution
+
+## Insights
+
+- [Data & AI Playbooks](https://www.tredence.com/primers): Primers on data and AI topics
+- [Data & AI 101](https://www.tredence.com/data-and-ai-101): Educational content on core data/AI concepts
+- [Thought Leadership](https://www.tredence.com/thought-leadership): Perspectives on data and AI trends
+- [Blog](https://www.tredence.com/blog): Company blog
+
+Sitemap: https://www.tredence.com/sitemap.xml

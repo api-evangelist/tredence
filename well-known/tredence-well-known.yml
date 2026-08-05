@@ -1,0 +1,58 @@
+generated: '2026-08-05'
+method: probed
+source: live probes of the Tredence marketing/corporate host
+host: https://www.tredence.com
+note: >-
+  Tredence operates no API host, developer host or docs host (developer.tredence.com,
+  docs.tredence.com and api.tredence.com do not resolve), so the only host with a
+  /.well-known/ surface to probe is the corporate marketing host. Every probed path
+  returned the site's HTML 404 page. Absence of these documents is recorded data, not
+  a gap in this pass.
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+- path: /.well-known/agent-card.json
+  status: 404
+- path: /.well-known/agent.json
+  status: 404
+related:
+- path: /llms.txt
+  status: 200
+  file: ../llms/tredence-llms.txt
+  note: authored (not plugin-generated) llms.txt served from the corporate host
+- path: /robots.txt
+  status: 200
+  note: >-
+    explicitly Allow: / for GPTBot, OAI-SearchBot, ChatGPT-User, ClaudeBot,
+    Claude-SearchBot, Claude-User, anthropic-ai, PerplexityBot, Google-Extended,
+    Applebot-Extended, CCBot, Meta-ExternalAgent, cohere-ai, Bytespider, Amazonbot,
+    Diffbot and YouBot — an opt-in agent posture
+x-evidence:
+  fetched: '2026-08-05'
+  probes:
+  - url: https://www.tredence.com/.well-known/security.txt
+    http_status: 404
+  - url: https://www.tredence.com/.well-known/agent-card.json
+    http_status: 404
+  - url: https://www.tredence.com/.well-known/agent.json
+    http_status: 404
+  - url: https://www.tredence.com/llms.txt
+    http_status: 200
+    content_type: text/plain
+  - url: https://developer.tredence.com/
+    http_status: 0
+    note: DNS does not resolve
+  - url: https://api.tredence.com/
+    http_status: 0
+    note: DNS does not resolve
+  - url: https://docs.tredence.com/
+    http_status: 0
+    note: DNS does not resolve

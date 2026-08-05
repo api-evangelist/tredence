@@ -1,8 +1,22 @@
 aid: tredence
 name: Tredence
-description: 'Tredence is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Tredence is a global data science and AI solutions company headquartered
+  in San Jose, California, founded in 2013 by Shub Bhowmick, Sumit Mehra and Shashank
+  Dubey. The firm positions itself around the "last-mile problem in AI" — the gap between
+  insight creation and value realization — and delivers agentic AI, generative AI, data
+  engineering, data science, MLOps, LLMOps, data modernization, supply-chain and customer-experience
+  analytics as consulting engagements backed by named accelerators and platforms including
+  RAPID (agentic process automation), Sancus (AI-led data quality and master data management),
+  MLWorks (industrial MLOps), Customer Cosmos, Supply Chain Control Tower, Revenue Growth
+  Management, On-Shelf Availability, Test and Learn Platform and UnityGO. It serves retail,
+  CPG, healthcare, life sciences, banking/financial services/insurance, telco/media/tech,
+  travel and hospitality, and industrials, with delivery centers across North America,
+  Europe and Asia. Tredence publishes an authored llms.txt for AI agents and an ISO
+  27001:2022 / ISO 27701:2019 / SOC 2 Type 2 certifications page, but does not operate
+  a public developer program: no developer portal, API reference, machine-readable
+  specification or first-party SDK is published on any Tredence host.'
 url: https://raw.githubusercontent.com/api-evangelist/tredence/refs/heads/main/apis.yml
+image: https://www.tredence.com/assets/Tredence_logo.png
 x-type: company
 x-source: harvest:secondary-market
 x-tier: stub
@@ -12,6 +26,15 @@ created: '2026-08-05'
 modified: '2026-08-05'
 tags:
 - Company
+- Data Science
+- Artificial Intelligence
+- Analytics
+- Machine Learning
+- Consulting
+- Data Engineering
+- MLOps
+- Agentic AI
+- Supply Chain
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +42,55 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/tredence-domain-security.yml
+- type: LLMsTxt
+  url: llms/tredence-llms.txt
+- type: WellKnown
+  url: well-known/tredence-well-known.yml
+- type: Conformance
+  url: conformance/tredence-conformance.yml
+- type: TrustCenter
+  url: security/tredence-trust-center.yml
+- type: Compliance
+  url: https://www.tredence.com/certifications
 - type: Website
+  url: https://www.tredence.com/
+- type: Blog
+  url: https://www.tredence.com/blog
+- type: Support
+  url: https://www.tredence.com/contact-us
+- type: TermsOfService
+  url: https://www.tredence.com/terms-of-use
+- type: PrivacyPolicy
+  url: https://www.tredence.com/privacy-policy
+- type: GitHubOrganization
+  url: https://github.com/tredenceofficial
+- type: SecondaryMarket
   url: https://forgeglobal.com/tredence_stock/
+x-enrichment:
+  date: '2026-08-05'
+  status: minimal
+  artifacts_added: 5
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    Tredence sells data-science and AI work as consulting engagements plus tenant-deployed
+    accelerators (Sancus, MLWorks, RAPID, Customer Cosmos), so there is nothing to
+    integrate with from outside — developer.tredence.com, api.tredence.com and
+    docs.tredence.com do not resolve at all, and none of the 862 URLs in the company
+    sitemap is a developer, API or reference page.
+  evidence:
+  - url: https://api.tredence.com/
+    status: 0
+  - url: https://developer.tredence.com/
+    status: 0
+  - url: https://www.tredence.com/openapi.json
+    status: 404
+  - url: https://www.tredence.com/sitemap.xml
+    status: 200
+  - url: https://www.tredence.com/llms.txt
+    status: 200
+  checked: '2026-08-05'
