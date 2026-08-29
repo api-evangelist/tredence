@@ -16,6 +16,17 @@ description: 'Tredence is a global data science and AI solutions company headqua
   a public developer program: no developer portal, API reference, machine-readable
   specification or first-party SDK is published on any Tredence host.'
 url: https://raw.githubusercontent.com/api-evangelist/tredence/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://www.tredence.com/assets/Tredence_logo.png
 x-type: company
 x-source: harvest:secondary-market
