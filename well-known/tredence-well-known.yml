@@ -2,27 +2,10 @@ generated: '2026-08-05'
 method: probed
 source: live probes of the Tredence marketing/corporate host
 host: https://www.tredence.com
-note: >-
-  Tredence operates no API host, developer host or docs host (developer.tredence.com,
-  docs.tredence.com and api.tredence.com do not resolve), so the only host with a
-  /.well-known/ surface to probe is the corporate marketing host. Every probed path
-  returned the site's HTML 404 page. Absence of these documents is recorded data, not
-  a gap in this pass.
-documents:
-- path: /.well-known/security.txt
-  status: 404
-- path: /.well-known/openid-configuration
-  status: 404
-- path: /.well-known/oauth-authorization-server
-  status: 404
-- path: /.well-known/api-catalog
-  status: 404
-- path: /.well-known/ai-plugin.json
-  status: 404
-- path: /.well-known/agent-card.json
-  status: 404
-- path: /.well-known/agent.json
-  status: 404
+note: Tredence operates no API host, developer host or docs host (developer.tredence.com, docs.tredence.com
+  and api.tredence.com do not resolve), so the only host with a /.well-known/ surface to probe is the
+  corporate marketing host. Every probed path returned the site's HTML 404 page. Absence of these documents
+  is recorded data, not a gap in this pass.
 related:
 - path: /llms.txt
   status: 200
@@ -30,11 +13,9 @@ related:
   note: authored (not plugin-generated) llms.txt served from the corporate host
 - path: /robots.txt
   status: 200
-  note: >-
-    explicitly Allow: / for GPTBot, OAI-SearchBot, ChatGPT-User, ClaudeBot,
-    Claude-SearchBot, Claude-User, anthropic-ai, PerplexityBot, Google-Extended,
-    Applebot-Extended, CCBot, Meta-ExternalAgent, cohere-ai, Bytespider, Amazonbot,
-    Diffbot and YouBot — an opt-in agent posture
+  note: 'explicitly Allow: / for GPTBot, OAI-SearchBot, ChatGPT-User, ClaudeBot, Claude-SearchBot, Claude-User,
+    anthropic-ai, PerplexityBot, Google-Extended, Applebot-Extended, CCBot, Meta-ExternalAgent, cohere-ai,
+    Bytespider, Amazonbot, Diffbot and YouBot — an opt-in agent posture'
 x-evidence:
   fetched: '2026-08-05'
   probes:
@@ -56,3 +37,25 @@ x-evidence:
   - url: https://docs.tredence.com/
     http_status: 0
     note: DNS does not resolve
+hosts:
+- host: https://www.tredence.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+x-shape-fix:
+  converted: '2026-08-20'
+  from: documents
+  note: Rewritten into hosts[] -> documents[], the only shape well_known_docs() in score.rb reads. A served
+    .well-known surface recorded in any other shape scores as absent.

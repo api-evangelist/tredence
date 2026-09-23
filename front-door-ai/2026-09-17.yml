@@ -1,0 +1,34 @@
+# Front Door AI Index — tredence — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: tredence
+  lexicon_version: '1.0'
+  probed_at: '2026-09-17'
+  host: www.tredence.com
+  final_host: www.tredence.com
+  ownership: own
+  owner: tredence
+  shares_host_with: null
+  inherited_from: null
+  verdict: scored
+  score: 55
+  host_score: 55
+  density: 26.13
+  words: 2105
+  tiers:
+    agentic: 5
+    core: 50
+    model: 0
+  ambiguous: 12
+  top_terms:
+    AI: 42
+    agentic: 5
+    ML: 3
+    agent: 3
+    generative ai: 3
+    smart: 3
+    automation: 2
+    gen ai: 2
+    intelligence: 2
+    predictive: 2
