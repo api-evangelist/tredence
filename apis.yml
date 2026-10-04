@@ -52,11 +52,11 @@ tags:
 - Data Science
 - Artificial Intelligence
 - Analytics
-- Machine-Learning
+- Machine Learning
 - Consulting
 - Data Engineering
 - MLOps
-- Agentic AI
+- AI Agents
 - Supply Chain
 tags_raw:
 - Company
@@ -69,6 +69,7 @@ tags_raw:
 - MLOps
 - Agentic AI
 - Supply Chain
+- Machine-Learning
 apis: []
 maintainers:
 - FN: Kin Lane
