@@ -1,7 +1,12 @@
 generated: '2026-10-13'
 method: searched
 checked:
+- https://api.appexchange.salesforce.com/recommendations/v3/listings?type=consultants&pageSize=50&page=0
+- https://api.finder.partners.aws.a2z.com/search?locale=en&size=20&from=0
+- https://app.hubspot.com/api/chirp-frontend-external/v1/gateway/com.hubspot.marketplace.personalization.rpc.PersonalizationPublicRpc/search?hs_static_app=marketplace-storefront-public-ui&hs_static_app_version=1.13519
 - https://azuremarketplace.microsoft.com/
+- https://www.databricks.com/en-partners-assets/data/partner/all/en.json
+- https://www.snowflake.com/content/snowflake-site/global/en/why-snowflake/partners/all-partners/_jcr_content/root/responsivegrid/container/container/filterable_resources.filter.json?offset=0
 marketplace_apps: []
 edges:
 - partner_name: Microsoft Azure Marketplace
@@ -23,3 +28,132 @@ edges:
   seller_name: Tredence Inc
   detected_by: sweep-cloud-marketplaces.py
   detected: '2026-10-13'
+- partner_name: AWS Partner Network (services)
+  partner: amazon-web-services
+  partner_match: register
+  type: register
+  channel: standard-directory
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://partners.amazonaws.com/partners/001E000001Et88UIAR
+  category: Services partner
+  contract_reference:
+    register: AWS Partner Solutions Finder (api.finder.partners.aws.a2z.com/search)
+    spec_file: null
+    standard: AWS Partner Network (services path)
+    role: aws-services-partner
+    registered_name: Tredence Inc
+    register_id: 001E000001Et88UIAR
+    partner_tier: Advanced
+    matched_domain: tredence.com
+    matched_by: domain
+    identity_source: the register's own website / profile URL for the firm (no lookup)
+    signal_note: listing = participation; certified_products = one entry per designation the program awards the
+      FIRM (lapsed flagged); partner_tier and context are never counted (breadth is not credit)
+    detected_by: sweep-professional-services.py
+    detected: '2026-10-19'
+    partner_paths:
+    - path_name: Services Path
+      path_tier: Advanced
+      path_stage: Differentiated
+    - path_name: Software Path
+      path_tier: null
+      path_stage: Validated
+    context:
+      service_deliveries: 3
+      professional_service_types:
+      - Cloud Migration Services
+      - Custom Application Development
+      - Managed Service Provider
+      - Strategic / IT Consulting
+      - Systems Integration
+      - Other
+      - Assessments
+      hq_country: United States
+    certified_products:
+    - product: Consumer Goods Services Competency
+      type: AWS Competency
+      lapsed: false
+    - product: Retail Consulting Competency
+      type: AWS Competency
+      lapsed: false
+    - product: Travel and Hospitality Consulting Competency
+      type: AWS Competency
+      lapsed: false
+  detected_by: sweep-professional-services.py
+  first_seen: '2026-10-19'
+- partner_name: Databricks Consulting & SI Partner Program
+  partner: databricks
+  partner_match: register
+  type: register
+  channel: standard-directory
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://www.databricks.com/company/partners/consulting-and-si
+  category: Services partner
+  contract_reference:
+    register: Databricks partner directory (en-partners-assets/data/partner/all/en.json)
+    spec_file: null
+    standard: Databricks C&SI partner
+    role: databricks-csi-partner
+    registered_name: Tredence
+    register_id: '5471'
+    partner_tier: null
+    matched_domain: tredence.com
+    matched_by: domain
+    identity_source: the register's own website / profile URL for the firm (no lookup)
+    signal_note: listing = participation; certified_products = one entry per designation the program awards the
+      FIRM (lapsed flagged); partner_tier and context are never counted (breadth is not credit)
+    detected_by: sweep-professional-services.py
+    detected: '2026-10-19'
+    context:
+      regions:
+      - Asia-Pacific
+      - Europe
+      - North America
+  detected_by: sweep-professional-services.py
+  first_seen: '2026-10-19'
+- partner_name: Snowflake Services Partner Program
+  partner: snowflake
+  partner_match: register
+  type: register
+  channel: standard-directory
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://www.snowflake.com/en/why-snowflake/partners/all-partners/tredence/
+  category: Services partner
+  contract_reference:
+    register: Snowflake partner directory (filterable_resources.filter.json + partner model.json)
+    spec_file: null
+    standard: Snowflake services partner
+    role: snowflake-services-partner
+    registered_name: Tredence Inc.
+    register_id: tredence
+    partner_tier: Elite
+    matched_domain: tredence.com
+    matched_by: domain
+    identity_source: the register's own website / profile URL for the firm (no lookup)
+    signal_note: listing = participation; certified_products = one entry per designation the program awards the
+      FIRM (lapsed flagged); partner_tier and context are never counted (breadth is not credit)
+    detected_by: sweep-professional-services.py
+    detected: '2026-10-19'
+    context:
+      badge: Snowflake AI Data Cloud Elite Services Partner badge
+    certified_products:
+    - product: Retail & Consumer Goods
+      type: Snowflake competency
+      lapsed: false
+    - product: Analytics
+      type: Snowflake workload specialization
+      lapsed: false
+    - product: Data Engineering
+      type: Snowflake workload specialization
+      lapsed: false
+  detected_by: sweep-professional-services.py
+  first_seen: '2026-10-19'
+source:
+- https://api.appexchange.salesforce.com/recommendations/v3/listings?type=consultants&pageSize=50&page=0
+- https://api.finder.partners.aws.a2z.com/search?locale=en&size=20&from=0
+- https://app.hubspot.com/api/chirp-frontend-external/v1/gateway/com.hubspot.marketplace.personalization.rpc.PersonalizationPublicRpc/search?hs_static_app=marketplace-storefront-public-ui&hs_static_app_version=1.13519
+- https://www.databricks.com/en-partners-assets/data/partner/all/en.json
+- https://www.snowflake.com/content/snowflake-site/global/en/why-snowflake/partners/all-partners/_jcr_content/root/responsivegrid/container/container/filterable_resources.filter.json?offset=0
